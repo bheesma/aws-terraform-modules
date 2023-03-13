@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "s3bucket" {
 
 
 resource "aws_s3_bucket_public_access_block" "s3bucket-public-policy" {
-  bucket = aws_s3_bucket.b.id
+  bucket = aws_s3_bucket.s3bucket.id
 
   block_public_acls       = true
   block_public_policy     = true
