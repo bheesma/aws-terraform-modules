@@ -1,7 +1,7 @@
 
 module "mybucket" {
   source      = "./modules/s3"
-  bucket-name = "hello-2jdk2l3884fh"
+  bucket-name = "hello-k2jdk2l3884fh"
   tags = {
     description = "hello desc"
   }
@@ -9,5 +9,5 @@ module "mybucket" {
 
 module "mybucket2" {
   source      = "./modules/s3"
-  bucket-name = "hello-kjdk2l3884fh"
+  bucket-name = "hello-bkjdk2l3884fh"
 }
