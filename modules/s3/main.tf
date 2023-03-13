@@ -6,4 +6,9 @@ resource "aws_s3_bucket" "b" {
     Name        = "My bucket"
     Environment = "Dev"
   }
+
+  block_public_acls   = true
+  ignore_public_acls  = true
+  block_public_policy = true
+  restrict_public_buckets = true
 }
