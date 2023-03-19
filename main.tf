@@ -5,15 +5,12 @@ module "mybucket" {
   tags = {
     description = "hello desc"
   }
-}
-
-module "mybucket2" {
-  source      = "./modules/s3"
-  bucket-name = "hello-bkjdk2l3884fh"
+  environment = terraform.workspace
 }
 
 module "lamb" {
   source      = "./modules/lambda-sqs"
   queue_name = "myq"
   function_name = "myf"
+  environment = terraform.workspace
 }
