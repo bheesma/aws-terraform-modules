@@ -14,6 +14,6 @@ module "mybucket2" {
 
 module "lamb" {
   source      = "./modules/lambda-sqs"
-  queue-name = "myq"
-  function-name = "myf"
+  queue_name = "myq"
+  function_name = "myf"
 }

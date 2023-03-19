@@ -1,8 +1,8 @@
-variable "queue-name" {
+variable "queue_name" {
   type        = string
   description = "Name of the queue"
 }
-variable "function-name" {
+variable "function_name" {
   type        = string
   description = "Name of the queue"
 }
